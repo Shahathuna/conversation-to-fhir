@@ -1,0 +1,9 @@
+section,conversations,precision,recall,f1,section_detected
+Chief complaint,3,1.0,1.0,1.0,1.0
+History of present illness,3,1.0,0.8,0.89,1.0
+Past medical history,3,1.0,1.0,1.0,0.67
+Past surgical history,3,1.0,1.0,1.0,1.0
+Medications,3,1.0,0.92,0.96,1.0
+Allergies,3,1.0,1.0,1.0,1.0
+Family / social history,3,0.88,0.8,0.84,1.0
+Review of systems,3,1.0,1.0,1.0,1.0

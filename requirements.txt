@@ -1,0 +1,8 @@
+psycopg[binary]>=3.1
+google-genai>=1.0
+pandas
+requests
+fhir.resources>=8
+matplotlib
+openpyxl
+faster-whisper   # optional, only for audio

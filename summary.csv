@@ -1,0 +1,14 @@
+measure,result
+Conversations evaluated,24
+Findings extracted,94
+Gold facts in expert notes,88
+Precision (findings supported by the conversation),98.9%
+Recall (expert-note facts captured),88.6%
+F1,93.5%
+Hallucination rate,1.1%
+Correct history section detected,95.8%
+"Findings given a code (demo terminology, 78 concepts)",35.1%
+Mean coding confidence (coded findings),0.95
+FHIR resources structurally valid,100.0%
+Terminology,"demo (78 concepts, not SNOMED CT)"
+Models,"gemini-3.5-flash-lite (extraction, coding, judge)"

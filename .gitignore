@@ -1,0 +1,6 @@
+.env
+api_key.txt
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+snomed_release/

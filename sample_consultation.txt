@@ -1,0 +1,27 @@
+Doctor: Good morning, come in and have a seat. What's brought you in today?
+Patient: Morning doctor. I've been getting this tight feeling in my chest, mostly when I walk up the hill to the shops.
+Doctor: How long has that been going on?
+Patient: About three weeks now. It goes off after I rest for a few minutes.
+Doctor: Does the pain go anywhere else, like your arm or jaw?
+Patient: Sometimes down my left arm, yes.
+Doctor: Any shortness of breath, sweating or feeling sick with it?
+Patient: A bit breathless, but no sweating and no sickness.
+Doctor: Any palpitations or blackouts?
+Patient: No, nothing like that.
+Doctor: Okay. Do you have any medical conditions I should know about?
+Patient: I've got type 2 diabetes, diagnosed about eight years ago, and high blood pressure.
+Doctor: Any operations in the past?
+Patient: I had my appendix out when I was a teenager.
+Doctor: What medications are you taking at the moment?
+Patient: Metformin 500 milligrams twice a day, ramipril 5 milligrams in the morning, and atorvastatin 20 at night.
+Doctor: Any allergies to medicines?
+Patient: Yes, penicillin. It gave me a bad rash all over.
+Doctor: Does anything run in the family, any heart problems?
+Patient: My dad had a heart attack when he was 55. My mum has diabetes as well.
+Doctor: Do you smoke?
+Patient: I used to, about 20 a day for 20 years, but I stopped five years ago.
+Doctor: And alcohol?
+Patient: Just a couple of pints at the weekend, maybe 8 units a week.
+Doctor: Who's at home with you?
+Patient: My wife.
+Doctor: Thank you. I'd like to check your blood pressure and do an ECG, and I'm going to refer you to the rapid access chest pain clinic because this sounds like it could be angina.

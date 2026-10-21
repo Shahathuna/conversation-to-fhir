@@ -1,0 +1,13 @@
+{
+  "resourceType": "Condition",
+  "subject": { "reference": "urn:uuid:e83810da-cdc3-51ab-9bbb-10c5dc296dfb" },
+  "encounter": { "reference": "urn:uuid:c1c07cc2-d61c-525d-95db-7e6b743d089a" },
+  "code": {
+    "text": "Chest tightness",
+    "coding": [{ "system": "urn:demo:not-snomed", "code": "DEMO-002", "display": "Chest tightness" }]
+  },
+  "category": [{ "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "encounter-diagnosis" }] }],
+  "note": [{ "text": "Said: tight feeling in my chest" }],
+  "verificationStatus": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status", "code": "confirmed" }] },
+  "clinicalStatus": { "coding": [{ "system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active" }] }
+}
