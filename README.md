@@ -4,7 +4,7 @@
 
 ![Status](https://img.shields.io/badge/status-pilot%20study-orange) ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![FHIR](https://img.shields.io/badge/FHIR-R4-red) ![License](https://img.shields.io/badge/license-MIT-green)
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-USERNAME/conversation-to-fhir/blob/main/notebooks/Conversation_to_FHIR_Colab.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shahathuna/conversation-to-fhir/blob/main/notebooks/Conversation_to_FHIR_Colab.ipynb)
 
 > **Pilot results, not final.** This repository reports a first test on 24 public conversations. The aim is to show that the pipeline works end to end and to find what needs improving. See [Limitations](#limitations) and [Next steps](#next-steps).
 
@@ -120,7 +120,7 @@ SNOMED CT is not included. Use requires a licence (free in the UK via NHS TRUD).
 
 ## Author
 
-**YOUR NAME** · YOUR AFFILIATION · [LinkedIn / email]
+**Shahathuna Mohamed** · MSc Health Data Science, Swansea University · shadumicro@gmail.com
 
 Research prototype, developed with AI coding assistance. Not a medical device and not for clinical use.
 
