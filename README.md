@@ -4,7 +4,7 @@
 
 ![Status](https://img.shields.io/badge/status-pilot%20study-orange) ![Python](https://img.shields.io/badge/python-3.10%2B-blue) ![FHIR](https://img.shields.io/badge/FHIR-R4-red) ![License](https://img.shields.io/badge/license-MIT-green)
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shahathuna/conversation-to-fhir/blob/main/notebooks/Conversation_to_FHIR_Colab.ipynb)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Shahathuna/conversation-to-fhir/blob/main/Conversation_to_FHIR_Colab.ipynb)
 
 > **Pilot results, not final.** This repository reports a first test on 24 public conversations. The aim is to show that the pipeline works end to end and to find what needs improving. See [Limitations](#limitations) and [Next steps](#next-steps).
 
@@ -16,7 +16,7 @@ During a consultation, much of the clinical history (presenting complaint, past 
 
 ## Pipeline
 
-![Pipeline](figures/pipeline.png)
+![Pipeline](pipeline.png)
 
 | Step | What happens | Tools |
 |---|---|---|
@@ -45,7 +45,7 @@ FHIR mapping: Condition (complaints, history, review of systems; "absent" → `r
 | FHIR resources structurally valid | 100% |
 | Findings given a code | 35.1%, limited by the 78-concept demo terminology |
 
-![Accuracy by section](figures/accuracy_by_section.png)
+![Accuracy by section](accuracy_by_section.png)
 
 ### What the pilot shows
 
@@ -54,11 +54,11 @@ FHIR mapping: Condition (complaints, history, review of systems; "absent" → `r
 3. **Self-reported confidence does not catch errors.** All 94 findings were given confidence ≥ 0.9, including the wrong one, so a confidence threshold removes nothing. Better uncertainty methods are needed (see Next steps).
 4. **Coding works, but coverage needs the full terminology.** The codes inspected so far were correct, including synonyms ("short of breath" → *Dyspnoea*). Most uncoded terms (e.g. CT thorax, oxygen saturation) are simply not in the demo list.
 
-Full tables: [`results/summary.csv`](results/summary.csv) · [`results/by_section.csv`](results/by_section.csv) · [`results/confidence_bands.csv`](results/confidence_bands.csv)
+Full tables: [`summary.csv`](summary.csv) · [`by_section.csv`](by_section.csv) · [`confidence_bands.csv`](confidence_bands.csv)
 
 ## Example
 
-Input: [`examples/sample_consultation.txt`](examples/sample_consultation.txt), a synthetic chest-pain consultation. Part of the output:
+Input: [`sample_consultation.txt`](sample_consultation.txt), a synthetic chest-pain consultation. Part of the output:
 
 | Section | Said | Clinical term | Status | Subject | Code |
 |---|---|---|---|---|---|
@@ -71,7 +71,7 @@ Input: [`examples/sample_consultation.txt`](examples/sample_consultation.txt), a
 | Smoking | "20 a day for 20 years… stopped five years ago" | Ex-smoker | present | patient | DEMO-070 |
 | Assessment / plan | "could be angina" | Angina pectoris | uncertain | patient | DEMO-028 |
 
-One resulting FHIR resource: [`examples/sample_fhir_condition.json`](examples/sample_fhir_condition.json).
+One resulting FHIR resource: [`sample_fhir_condition.json`](sample_fhir_condition.json).
 
 ## How to run
 
@@ -86,12 +86,12 @@ For real SNOMED CT codes, register with [NHS TRUD](https://isd.digital.nhs.uk/tr
 
 ## Repository contents
 
-```
-notebooks/Conversation_to_FHIR_Colab.ipynb   the full pipeline and evaluation (Google Colab)
-results/                                      pilot results as CSV
-figures/                                      pipeline diagram and results chart
-examples/                                     sample consultation and FHIR output
-```
+| File | What it is |
+|---|---|
+| `Conversation_to_FHIR_Colab.ipynb` | The full pipeline and evaluation (Google Colab) |
+| `summary.csv`, `by_section.csv`, `confidence_bands.csv` | Pilot results |
+| `pipeline.png`, `accuracy_by_section.png` | Pipeline diagram and results chart |
+| `sample_consultation.txt`, `sample_fhir_condition.json` | Example input and FHIR output |
 
 ## Limitations
 
