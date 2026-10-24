@@ -122,7 +122,7 @@ SNOMED CT is not included. Use requires a licence (free in the UK via NHS TRUD).
 
 **Shahathuna Mohamed** · MSc Health Data Science, Swansea University · shadumicro@gmail.com
 
-Research prototype, developed with AI coding assistance. Not a medical device and not for clinical use.
+Research prototype. Not a medical device and not for clinical use.
 
 ## License
 
